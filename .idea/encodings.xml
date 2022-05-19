@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/11_Sorting/23_StraightInsertionSort/23_StraightInsertionSort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/11_Sorting/24_Binary_Inserting_Sort/24_Binary_Inserting_Sort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/11_Sorting/25_ShellsSort/25_ShellsSort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/11_Sorting/27_QuickSort/27_QuickSort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/classdesign/main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/classdesign/src/binsertsort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/classdesign/src/bubblesort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/classdesign/src/insertsort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/classdesign/src/quickSort.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/classdesign/src/shellsort.c" charset="GBK" />
+  </component>
+</project>

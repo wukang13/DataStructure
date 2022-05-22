@@ -10,10 +10,9 @@
  * @param r  数组
  * @param n 个数
  */
-void InsertSort(SqType y[], int n) {
+void InsertSort(SqType r[], int n) {
   int i, j;
-  SqType r[n], tem;
-  mempcpy(r, y, sizeof(SqType) * n);
+  SqType tem;
   for (i = 1; i < n; i++) {
     printf_s("第%d趟结果：", i);
     tem = r[i];

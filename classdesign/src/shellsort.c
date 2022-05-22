@@ -6,10 +6,9 @@
 #include "stdio.h"
 #include "string.h"
 //希尔排序：
-void ShellSort(SqType y[], int n) {
+void ShellSort(SqType r[], int n) {
   int i;
-  SqType tem,r[n];
-  mempcpy(r, y, sizeof(SqType) * n);
+  SqType tem;
   for (int x = 1, d = n / 2; d > 0; d = d / 2, x++) {         //d相当于一把尺子，相隔距离d的结果数字为一组
     printf("第%d趟结果：", x);
     for (i = d; i < n; i++) {

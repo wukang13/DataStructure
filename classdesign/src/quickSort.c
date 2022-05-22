@@ -4,7 +4,6 @@
 
 #include "quickSort.h"
 #include "stdio.h"
-#include "string.h"
 int quickSort(SqType r[], int s, int n);
 
 /**
@@ -14,19 +13,18 @@ int quickSort(SqType r[], int s, int n);
  * @param n 右下标
  */
 void QuickSort(SqType y[], int m, int n) {
-  static int times=0;
-  SqType r[n];
+  static int times = 0;
   int z;
-  memcpy(r, y,sizeof(SqType) * n);
   if (m < n) {
-    z = quickSort(r, m, n);
+    z = quickSort(y, m, n);
     printf("第%d趟结果：", ++times);
     for (int x = 0; x < 10; x++) {
-      printf("  %d", r[x].key);
+      printf("  %d", y[x].key);
+      fflush(stdout);
     }
     printf("\n");
-    QuickSort(r, m, z - 1);  //将枢轴记录保存到low=high的位置
-    QuickSort(r, z + 1, n);
+    QuickSort(y, m, z );  //将枢轴记录保存到low=high的位置
+    QuickSort(y, z + 1, n );
   }
 }
 /**
@@ -38,7 +36,7 @@ void QuickSort(SqType y[], int m, int n) {
  */
 int quickSort(SqType r[], int s, int n) {
   SqType temp;
-  int left = s, right = n;
+  int left = s, right = n - 1;
   temp = r[left];
   while (left < right) {
     while (right > left && r[right].key >= temp.key)

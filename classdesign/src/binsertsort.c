@@ -7,14 +7,14 @@
 #include "stdio.h"
 
 //折半排序：
-void BinsertSort(SqType y[], int n) {
+void BinsertSort(SqType r[], int n) {
   int i, j;
-  SqType tem,r[n];
-  mempcpy(r, y, sizeof(SqType) * n);
+  SqType tem;
+
   int low, high, mid;
   for (i = 1; i < n; ++i) {      //从第二个数字开始
     tem.key = r[i].key;
-    low = 1;
+    low = 0;
     high = i - 1;
     while (low <= high) {
       mid = (low + high) / 2;
